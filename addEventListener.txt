@@ -1,0 +1,12 @@
+element.addEventListener(event, function, useCapture)
+
+event:
+http://www.w3schools.com/jsref/dom_obj_event.asp
+
+function:
+
+useCapture:
+	true - The event handler is executed in the capturing phase
+	由外而內觸發
+	false- Default. The event handler is executed in the bubbling phase
+	預設 由內而外觸發
