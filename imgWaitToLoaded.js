@@ -1,10 +1,10 @@
 "use strict"
 console.log("load imgWaitToLoaded.js")
 
-function awaitToLoaded(imgElem,link){
+function imgWaitToLoaded(imgElem,link){
 	`
 		if want to catch err:
-		await awaitToLoaded().catch(error => console.log(error))
+		await imgWaitToLoaded(imgElem,link).catch(error => console.log(error))
 	`
 	return(
 		new Promise((resolve,reject) => {
