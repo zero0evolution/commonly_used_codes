@@ -25,9 +25,9 @@ function s2t(string){
 
 		if(phraseDict.hasOwnProperty(firstWord)){
 			
-			for(let phraseLen in phraseDict[firstWord]){
-				if(!(phraseLen.match(/^\d+$/))){continue}
-				phraseLen = Number(phraseLen)
+			for(const phraseLenStr in phraseDict[firstWord]){
+				if(!(phraseLenStr.match(/^\d+$/))){continue}
+				const phraseLen = Number(phraseLenStr)
 			
 				const fetchStr = transWordStr.substr(i,phraseLen)
 
