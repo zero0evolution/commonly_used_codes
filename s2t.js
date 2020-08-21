@@ -1,4 +1,4 @@
-
+"use strict"
 function s2t(string){
 	
 	let transWordStr = ""
