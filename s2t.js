@@ -1,6 +1,7 @@
 "use strict"
 function s2t(string){
-	
+	if(!string){return(null)}
+
 	let transWordStr = ""
 	let i = 0
 	// 字轉換
