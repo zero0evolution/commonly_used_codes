@@ -1,4 +1,5 @@
-function replace_firbid_file_name(string){
+"use strict"
+function replace_forbid_file_name(string){
 	// 
 	string = string
 		.replace(/\?/mg,"？")
