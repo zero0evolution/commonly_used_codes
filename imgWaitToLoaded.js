@@ -10,15 +10,18 @@ function imgWaitToLoaded(imgElem,link){
 		new Promise((resolve,reject) => {
 			imgElem.src = link
 			imgElem.alt = "loading..."
+			imgElem.classList.add("loading")
 
 			imgElem.addEventListener("load",function(){
 				imgElem.classList.add("complete")
 				imgElem.classList.remove("failed")
+				imgElem.classList.remove("loading")
 				imgElem.alt = "complete!!!"
 				resolve("loaded image: "+link)
 			})
 			imgElem.addEventListener("error",function(){
 				imgElem.classList.add("failed")
+				imgElem.classList.remove("loading")
 				imgElem.alt = "failed!"
 				reject("loaded image failed: "+link)
 			})

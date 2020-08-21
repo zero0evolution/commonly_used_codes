@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+;寫入到Explorer所有檔案的右鍵選單
+[HKEY_CLASSES_ROOT\Directory\Shell\名稱簡轉繁\Command]
+
+@="\"C:\\Python\\pythonw.exe\" \"C:\\Python\\Lib\\idlelib\\idle.pyw\" \"-n\" \"-r\" \"C:\\Program Files\\簡轉繁\\Explorer_名稱簡轉繁.py\" \"%1\""
+
+;寫入到Explorer所有資料夾的右鍵選單
+[HKEY_CLASSES_ROOT\*\Shell\名稱簡轉繁\Command]
+
+@="\"C:\\Python\\pythonw.exe\" \"C:\\Python\\Lib\\idlelib\\idle.pyw\" \"-n\" \"-r\" \"C:\\Program Files\\簡轉繁\\Explorer_名稱簡轉繁.py\" \"%1\""

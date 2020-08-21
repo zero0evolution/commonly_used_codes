@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+;寫入到Explorer cue右鍵選單
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.cue\Shell\文件簡轉繁\Command]
+
+@="\"C:\\Python\\pythonw.exe\" \"C:\\Python\\Lib\\idlelib\\idle.pyw\" \"-n\" \"-r\" \"C:\\Program Files\\簡轉繁\\Explorer_文件簡轉繁.py\" \"%1\""
+
+;txt
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.txt\Shell\文件簡轉繁\Command]
+
+@="\"C:\\Python\\pythonw.exe\" \"C:\\Python\\Lib\\idlelib\\idle.pyw\" \"-n\" \"-r\" \"C:\\Program Files\\簡轉繁\\Explorer_文件簡轉繁.py\" \"%1\""
+
+;ssa
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ssa\Shell\文件簡轉繁\Command]
+
+@="\"C:\\Python\\pythonw.exe\" \"C:\\Python\\Lib\\idlelib\\idle.pyw\" \"-n\" \"-r\" \"C:\\Program Files\\簡轉繁\\Explorer_文件簡轉繁.py\" \"%1\""
+
+;ass
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ass\Shell\文件簡轉繁\Command]
+
+@="\"C:\\Python\\pythonw.exe\" \"C:\\Python\\Lib\\idlelib\\idle.pyw\" \"-n\" \"-r\" \"C:\\Program Files\\簡轉繁\\Explorer_文件簡轉繁.py\" \"%1\""
+
+;srt
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.srt\Shell\文件簡轉繁\Command]
+
+@="\"C:\\Python\\pythonw.exe\" \"C:\\Python\\Lib\\idlelib\\idle.pyw\" \"-n\" \"-r\" \"C:\\Program Files\\簡轉繁\\Explorer_文件簡轉繁.py\" \"%1\""
+
+;log
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.log\Shell\文件簡轉繁\Command]
+
+@="\"C:\\Python\\pythonw.exe\" \"C:\\Python\\Lib\\idlelib\\idle.pyw\" \"-n\" \"-r\" \"C:\\Program Files\\簡轉繁\\Explorer_文件簡轉繁.py\" \"%1\""
