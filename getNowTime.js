@@ -6,5 +6,5 @@ function getNowTime(){
 								+ d.getHours() + ":"  
 								+ d.getMinutes() + ":" 
 								+ d.getSeconds()
-	retrun(nowtime)
+	return(nowtime)
 }
