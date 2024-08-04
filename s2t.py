@@ -123,5 +123,3 @@ class main():
 
 		with open(file = 新檔名,mode = "wt",encoding = 編碼) as fileObj:
 			fileObj.write(newString)
-
-

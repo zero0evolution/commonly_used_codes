@@ -51,6 +51,35 @@ function s2t(string){
 }
 
 
+
+function s2t_all(){
+	document.title = s2t(document.title)
+
+	const treeWalker = document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT)
+	let textNode = treeWalker.nextNode()
+
+	while(textNode){
+		if(textNode.data){
+			textNode.data = s2t(textNode.data)
+		}
+		textNode = treeWalker.nextNode()
+	}
+}
+
+function s2t_node(node){
+
+	const treeWalker = document.createTreeWalker(node,NodeFilter.SHOW_TEXT)
+	let textNode = treeWalker.nextNode()
+
+	while(textNode){
+		if(textNode.data){
+			textNode.data = s2t(textNode.data)
+		}
+		textNode = treeWalker.nextNode()
+	}
+}
+
+
 const phraseDict = {
 	'易': {
 		2: {'易松': '易鬆'}, 

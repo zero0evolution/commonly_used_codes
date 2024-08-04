@@ -1,6 +1,6 @@
 //建立新的觀察物件
 const observerObj = new MutationObserver(
-	(mutationObjs)=>{
+	function(mutationObjs){
 		for(const eachMutationObj of mutationObjs){
 			//attributes,characterData,childList
 			eachMutationObj.type
@@ -20,8 +20,6 @@ const observerObj = new MutationObserver(
 			eachMutationObj.attributeNamespace
 			//attributes:舊的屬性值,characterData:舊的資料,childList:null
 			eachMutationObj.oldValue
-
-
 		}
 	}
 ).observe(
