@@ -29,5 +29,5 @@ function downloadTextFunc(fileName,text){
 		[text], 
 		{"type": "text/plain;charset=utf-8"}
 	)
-	downloadBlobFunc(fileName,blobObj)
+	return(downloadBlobFunc(fileName,blobObj))
 }

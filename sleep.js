@@ -1,7 +1,7 @@
 "use strict"
 console.log("load sleep.js")
 
-function sleep(sleepMs){
+function sleep(sleepms){
 	`
 		sleep time (micro seconds)
 	`
@@ -10,8 +10,8 @@ function sleep(sleepMs){
 			function(resolve,reject){
 				setTimeout(
 					function(){
-						resolve("wait "+sleepMs+" ms!!")
-					},sleepMs
+						resolve("wait "+sleepms+" ms!!")
+					},sleepms
 				)
 			}
 		)
